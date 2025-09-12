@@ -1,4 +1,4 @@
-# Assignment: Data Science using Shell
+# Assignment02: Data Science using Shell
 
 **You should thoroughly read through the entire assignment before beginning your work!**
 
