@@ -176,3 +176,8 @@
   156  bash data-script.bash > bash-stdout.txt
   157  git add . && git commit -m "add std of weight when alcohol = yes" && git push
   158  history > bash-history.txt
+  159  git add . && git commit -m "add bash history" && git push
+  160  git add . && git commit -m "update .gitignore for final submission" && git push
+  161  git rm -r --cached .
+  162  git add . && git commit -m "update .gitignore for final submission 2" && git push
+  163  history > bash-history.txt
