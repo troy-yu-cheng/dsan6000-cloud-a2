@@ -87,11 +87,17 @@ You can complete this assignment using one of the following environments:
    Calculate the **median** `Weight` of babies for mothers who smoke vs. don't smoke:
    
    a. Filter the dataset to rows where `Smoker` is `Yes`
+
    b. Extract only the `Weight` column (exclude the header)
+
    c. Calculate the median of these weights
+
    d. Save the result to `smoker-yes-med.txt` (number only, no text)
+
    e. Repeat for `Smoker` = `No`, save to `smoker-no-med.txt`
+
    f. Display both results with clear labels
+   
    g. Add a comment with a NON-TECHNICAL summary of the relationship
 
    **Note**: Median requires sorting values and finding the middle element. Handle both odd and even counts of data points.
