@@ -34,7 +34,6 @@ awk -F, 'NR>1 && $8=="Yes"{print $6}' NCBirths2004.csv | sort -n \
             else {print (a[NR/2]+a[NR/2+1])/2} # even count → average of two
         }' > smoker-yes-med.txt
 
-
 # Median Weight – Smoker = No
 awk -F, 'NR>1 && $8=="No"{print $6}' NCBirths2004.csv | sort -n \
     | awk ' # AI-assisted: direct median calculation
@@ -52,5 +51,25 @@ echo "Median Weight - Smoker=No : $(cat smoker-no-med.txt)"
 # In this dataset, babies born to mothers who smoke tend to have a lower median birth weight than babies born to non-smoking mothers.
 
 
+# Average Weight – Alcohol = Yes
+# AI-assisted: filter Alcohol=Yes, accumulate sum and count to compute average
+#   -F, : comma as field separator
+#   NR>1 : skip header row
+#   $4   : Alcohol column
+#   $6   : Weight column
+#   sum+=$6; n++ : add weight to sum and increment counter
+#   END{if(n) print sum/n} : after all rows, print mean
+awk -F, 'NR>1 && $4=="Yes"{sum+=$6; n++} END{if(n) print sum/n}' \
+    NCBirths2004.csv > alcohol-yes-avg.txt
 
+# Average Weight – Alcohol = No
+# AI-assisted: compute mean for Alcohol=No
+awk -F, 'NR>1 && $4=="No"{sum+=$6; n++} END{if(n) print sum/n}' \
+    NCBirths2004.csv > alcohol-no-avg.txt
+
+# Display averages with clear labels
+echo "Average Weight - Alcohol=Yes: $(cat alcohol-yes-avg.txt)"
+echo "Average Weight - Alcohol=No : $(cat alcohol-no-avg.txt)"
+
+# Summary: In this dataset, babies born to mothers who consume alcohol during pregnancy tend to have a slightly lower average birth weight than those whose mothers did not consume alcohol. 
 
