@@ -1,0 +1,178 @@
+    1  man sudo_root
+    2  cd ~
+    3  ls
+    4  cd mnt
+    5  cd d
+    6  cd D:/
+    7  pwd
+    8  ls
+    9  cd ..
+   10  ls
+   11  cd ..
+   12  ls
+   13  cd mnt
+   14  ls
+   15  cd d
+   16  ls
+   17  ssh bandit0@bandit.labs.overthewire.org -p 2220
+   18  chmod 400 yc1317-dsan6k-f2025.pem 
+   19  ssh dsan6000-ec2
+   20  chmod 400 yc1317-dsan6k-f2025.pem 
+   21  chmon 400 yc1317-dsan6k-f2025.pem 
+   22  chmod 400 yc1317-dsan6k-f2025.pem
+   23  chmod 400 yc1317-dsan6k-f2025.pem 
+   24  ssh -i "D:/1_gu_academy/1_25_fall/dsan_6000/yc1317-dsan6k-f2025.pem" ubuntu@ec2-107-22-90-224.compute-1.amazonaws.com
+   25  curl -LsSf https://astral.sh/uv/install.sh | sh
+   26  source $HOME/.cargo/env
+   27  source $HOME/.cargo/env
+   28  uv --version
+   29  command -v uv
+   30  uv run python --version
+   31  uv sync
+   32  uv run python missing.py --n 5 --num-list "1 2 3 5"
+   33  uv run python missing.py --help
+   34  uv run python missing.py
+   35  uv run python words.py filename.txt
+   36  5
+   37  uv run python cars.py
+   38  uv --version
+   39  cd ..
+   40  uv --version
+   41  cd fall-2025-a01-troy-yu-cheng/
+   42  uv sync
+   43  uv run python missing.py --n 5 --num-list "1 2 3 5"
+   44  uv run python missing.py -n 5 -num-list "1 2 3 5"
+   45  uv run python missing.py -n 5
+   46  uv run python missing.py -5
+   47  uv run python missing.py [-h]
+   48  uv run python missing.py [-5]
+   49  uv run python missing.py -h
+   50  uv run python missing.py
+   51  5
+   52  rm .venv/
+   53  rm -r .venv/
+   54  uv run python missing.py --n 5 --num-list "1 2 3 5"
+   55  uv run python missing.py
+   56  uv run python words.py filename.txt
+   57  uv run python cars.py
+   58  uv sync
+   59  uv run python missing.py --n 5
+   60  uv run python missing.py --n 5 --num-list "5 2 3 1" 
+   61  uv run python missing.py --n 5 --num-list "5 2 3 1"
+   62  uv run python missing.py --n 5
+   63  uv run python missing.py --n 5 --num-list "5 2 3 1" 
+   64  uv run python missing.py --n 5.1 --num-list "5 2 3 1" 
+   65  uv run python missing.py --n 5.1 --num-list "5 2 3" 
+   66  uv run python missing.py --n 5 --num-list "5 2 3" 
+   67  uv run python missing.py --n 5 --num-list "5 2 3 5" 
+   68  wget -O alice.txt https://www.gutenberg.org/files/11/11-0.txt
+   69  uv run python words.py alice.txt | head -n 10
+   70  cat alice.txt | uv run python words.py | head -n 10
+   71  uv run python words.py alice.txt | head -n 50 > gutenberg-top50.txt
+   72  mkdir -p data/output
+   73  ls -ld data/output
+   74  uv run python car.py
+   75  uv run python cars.py
+   76  df
+   77  curl -LsSf https://astral.sh/uv/install.sh | sh
+   78  uv sync
+   79  source .venv/bin/activate
+   80  uv run python -m ipykernel install --user --name intro-to-cloud --display-name "Python (intro-to-cloud)"
+   81  ssh ec2-107-22-90-224.compute-1.amazonaws.com
+   82  cd ../../
+   83  ls
+   84  chmod 400 yc1317-dsan6k-f2025.pem 
+   85  cd lsb
+   86  cd lab
+   87  cd fall-2025-lab-02-troy-yu-cheng/
+   88  ls
+   89  code .
+   90  uv run python -m ipykernel install --user --name intro-to-cloud --display-name "Python (intro-to-cloud)"
+   91  source .venv/bin/activate
+   92  uv run python -m ipykernel install --user --name intro-to-cloud --display-name "Python (intro-to-cloud)"
+   93  head NCBirths2004.csv 
+   94  head -n 1 NCBirths2004.csv > headers.txt
+   95  touch data-script.bash
+   96  chmod +x data-script.bash
+   97  awk -F, '$8=="Yes"{print $6}' "$DATA" | sort -n
+   98  head NCBirths2004.csv 
+   99  head -n 1 NCBirths2004.csv 
+  100  head -n 1 NCBirths2004.csv > headers.txt
+  101  git add . && git commit -m "add headers.txt" && git push origin main
+  102  git config --global user.email "itischeng0727@gmail.com"
+  103  git add . && git commit -m "add headers.txt" && git push origin main
+  104  git status
+  105  git push
+  106  ls -lh NCBirths2004.csv
+  107  head -n 1 NCBirths2004.csv
+  108  awk -F, 'NR==1{for(i=1;i<=NF;i++) print i, $i}' NCBirths2004.csv
+  109  WEIGHT_COL=$(awk -F, 'NR==1{for(i=1;i<=NF;i++) if($i=="Weight")  print i}' NCBirths2004.csv)
+  110  SMOKER_COL=$(awk -F, 'NR==1{for(i=1;i<=NF;i++) if($i=="Smoker")  print i}' NCBirths2004.csv)
+  111  ALCOHOL_COL=$(awk -F, 'NR==1{for(i=1;i<=NF;i++) if($i=="Alcohol") print i}' NCBirths2004.csv)
+  112  echo "Weight=$WEIGHT_COL, Smoker=$SMOKER_COL, Alcohol=$ALCOHOL_COL"
+  113  awk -F, -v c=$SMOKER_COL -v w=$WEIGHT_COL 'NR>1 && $c=="Yes"{print $w}' NCBirths2004.csv | sort -n
+  114  history
+  115  awk -F, 'NR>1 && $8=="Yes"{print $6}' NCBirths2004.csv | sort -n > w_smoker_yes.txt
+  116  rm w_smoker_yes.txt 
+  117  awk -F, 'NR>1 && $8=="Yes"{print $6}' NCBirths2004.csv | sort -n
+  118  awk -F, 'NR>1 && $8=="Yes"{print $6}' NCBirths2004.csv | sort -n     | awk ' # AI-assisted: find median directly without temp file
+        {a[NR]=$1}
+        END{
+            if(NR%2){print a[(NR+1)/2]}          # odd count → middle value
+            else {print (a[NR/2]+a[NR/2+1])/2}   # even count → average of two
+        }' 
+  119  history 
+  120  awk -F, 'NR>1 && $8=="Yes"{print $6}' NCBirths2004.csv | sort -n     | awk ' # AI-assisted: find median directly without temp file
+        {a[NR]=$1}
+        END{
+            if(NR%2){print a[(NR+1)/2]}          # odd count → middle value
+            else {print (a[NR/2]+a[NR/2+1])/2}   # even count → average of two
+        }' 
+  121  awk -F, 'NR>1 && $8=="Yes"{print $6}' NCBirths2004.csv | sort -n     | awk ' # AI-assisted: find median directly without temp file
+        {a[NR]=$1}
+        END{
+            if(NR%2){print a[(NR+1)/2]}          # odd count → middle value
+            else {print (a[NR/2]+a[NR/2+1])/2}   # even count → average of two
+        }' > smoker-yes-med.txt
+  122  cat smoker-yes-med.txt
+  123  awk -F, 'NR>1 && $8=="No"{print $6}' NCBirths2004.csv | sort -n     | awk ' # AI-assisted: direct median calculation
+        {a[NR]=$1}
+        END{
+            if(NR%2){print a[(NR+1)/2]}
+            else {print (a[NR/2]+a[NR/2+1])/2}
+        }' > smoker-no-med.txt
+  124  cat smoker-no-med.txt 
+  125  git add . && git commit -m "add median calculation" && git push
+  126  git config --global credential.helper store
+  127  git add . && git commit -m "add median calculation" && git push
+  128  cp -f ~/.git-credentials ~/.git-credentials.bak 2>/dev/null || true
+  129  sed -i '/github\.com/d' ~/.git-credentials 2>/dev/null || true
+  130  cp -f ~/.git-credentials ~/.git-credentials.bak 2>/dev/null || true
+  131  sed -i '/github\.com/d' ~/.git-credentials 2>/dev/null || true
+  132  git config --global credential.helper store
+  133  git remote -v
+  134  git status
+  135  git push
+  136  echo "Median Weight - Smoker=Yes: $(cat smoker-yes-med.txt)"
+  137  echo "Median Weight - Smoker=No : $(cat smoker-no-med.txt)"
+  138  awk -F, 'NR==1{for(i=1;i<=NF;i++) print i, $i}' NCBirths2004.csv
+  139  git add . && git commit -m "add part 1 in bash" && git push
+  140  awk -F, 'NR>1 && $4=="Yes"{sum+=$6; n++} END{if(n) print sum/n}' NCBirths2004.csv
+  141  awk -F, 'NR>1 && $4=="Yes"{sum+=$6; n++} END{if(n) print sum/n}' NCBirths2004.csv > alcohol-yes-avg.txt
+  142  cat alcohol-yes-avg.txt
+  143  awk -F, 'NR>1 && $4=="No"{sum+=$6; n++} END{if(n) print sum/n}' NCBirths2004.csv
+  144  awk -F, 'NR>1 && $4=="No"{sum+=$6; n++} END{if(n) print sum/n}' NCBirths2004.csv > alcohol-no-avg.txt
+  145  cat alcohol-no-avg.txt
+  146  echo "Average Weight - Alcohol=Yes: $(cat alcohol-yes-avg.txt)"
+  147  echo "Average Weight - Alcohol=No : $(cat alcohol-no-avg.txt)"
+  148  git add . && git commit -m "add avg weight by alcohol" && git push
+  149  awk -F, 'NR>1 && $4=="Yes"{n++; sum+=$6; sumsq+=$6*$6} END{if(n) print n, sum, sumsq}' NCBirths2004.csv
+  150  awk -F, 'NR>1 && $4=="Yes"{n++; sum+=$6; sumsq+=$6*$6} END{if(n) print n, sum, sumsq}' NCBirths2004.csv   | awk '{n=$1; s=$2; ss=$3; print "scale=10; sqrt( (",ss,"/",n,") - ((",s,"/",n,")^2 ) )"}'
+  151  awk -F, 'NR>1 && $4=="Yes"{n++; sum+=$6; sumsq+=$6*$6} END{if(n) print n, sum, sumsq}' NCBirths2004.csv   | awk '{n=$1; s=$2; ss=$3; print "scale=10; sqrt( (",ss,"/",n,") - ((",s,"/",n,")^2 ) )"}'   | bc -l
+  152  awk -F, 'NR>1 && $4=="Yes"{n++; sum+=$6; sumsq+=$6*$6} END{if(n) print n, sum, sumsq}' NCBirths2004.csv   | awk '{n=$1; s=$2; ss=$3; print "scale=10; sqrt( (",ss,"/",n,") - ((",s,"/",n,")^2 ) )"}'   | bc -l > stddev-alcohol-yes.txt
+  153  cat stddev-alcohol-yes.txt
+  154  bash data-script.bash > bash-stdout.txt
+  155  echo "Standard Deviation of Weight (Alcohol=Yes): $(cat stddev-alcohol-yes.txt)"
+  156  bash data-script.bash > bash-stdout.txt
+  157  git add . && git commit -m "add std of weight when alcohol = yes" && git push
+  158  history > bash-history.txt
