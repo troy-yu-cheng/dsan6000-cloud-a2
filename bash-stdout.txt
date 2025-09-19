@@ -1,0 +1,23 @@
+ID,MothersAge,Tobacco,Alcohol,Gender,Weight,Gestation,Smoker
+1,30-34,No,No,Male,3827,40,No
+2,30-34,No,No,Male,3629,38,No
+3,35-39,No,No,Female,3062,37,No
+4,20-24,No,No,Female,3430,39,No
+5,25-29,No,No,Male,3827,38,No
+6,35-39,No,No,Female,3119,39,No
+7,20-24,No,No,Female,3260,40,No
+8,20-24,No,No,Male,3969,40,No
+9,20-24,No,No,Male,3175,39,No
+1 ID
+2 MothersAge
+3 Tobacco
+4 Alcohol
+5 Gender
+6 Weight
+7 Gestation
+8 Smoker
+Median Weight - Smoker=Yes: 3204
+Median Weight - Smoker=No : 3459
+Average Weight - Alcohol=Yes: 3345.25
+Average Weight - Alcohol=No : 3448.67
+Standard Deviation of Weight (Alcohol=Yes): 553.8724469586

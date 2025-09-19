@@ -73,3 +73,19 @@ echo "Average Weight - Alcohol=No : $(cat alcohol-no-avg.txt)"
 
 # Summary: In this dataset, babies born to mothers who consume alcohol during pregnancy tend to have a slightly lower average birth weight than those whose mothers did not consume alcohol. 
 
+# Part 3: Advanced Statistics
+# AI-assisted: accumulate n, sum(x), and sum(x^2) for Alcohol=Yes
+#   -F, : comma as field separator
+#   NR>1 : skip header row
+#   $4=="Yes" : filter Alcohol column
+#   $6 : Weight column
+#   n++ : increment count
+#   sum+=$6 : accumulate weight
+#   sumsq+=$6*$6 : accumulate square of weight
+#   END{print n, sum, sumsq} : output three numbers
+awk -F, 'NR>1 && $4=="Yes"{n++; sum+=$6; sumsq+=$6*$6} END{if(n) print n, sum, sumsq}' NCBirths2004.csv \
+  | awk '{n=$1; s=$2; ss=$3; print "scale=10; sqrt( (",ss,"/",n,") - ((",s,"/",n,")^2 ) )"}' \
+  | bc -l > stddev-alcohol-yes.txt
+
+echo "Standard Deviation of Weight (Alcohol=Yes): $(cat stddev-alcohol-yes.txt)"
+
