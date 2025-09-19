@@ -1,3 +1,20 @@
+# Ignore everything by default
+*
+
+# --- Keep only required submission files ---
+!.gitignore
+!README.md
+!NCBirths2004.csv
+!headers.txt
+!smoker-yes-med.txt
+!smoker-no-med.txt
+!data-script.bash
+!bash-stdout.txt
+!alcohol-yes-avg.txt
+!alcohol-no-avg.txt
+!stddev-alcohol-yes.txt
+!bash-history.txt
+
 # Shell scripting project .gitignore
 
 # Scratchpad folder for planning and notes
